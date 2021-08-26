@@ -1,10 +1,16 @@
 package com.rsk
 
-class Person(var name:String, var age: Int) {
-    fun display(){
-        println("Display: $name")
-    }
-    fun displayWithLambda(func: (s:String) -> Unit){
-        func(name)
-    }
+import java.lang.UnsupportedOperationException
+
+interface Signatory{
+    fun sign()
+}
+
+class Person : Signatory{
+    override fun sign() = println("i can sign the documents")
+}
+
+fun main(agrs: Array<String>){
+    val p = Person()
+    p.sign()
 }
