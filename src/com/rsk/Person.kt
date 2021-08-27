@@ -24,6 +24,18 @@ class  Student(name: String, age: Int):Person(name, age)
 fun main(args: Array<String>){
     val p = Person("Koose", 36)
     val a = Animal("Elephant", 20)
+
+    /*so we g to see the code associate with Gideon class
+    *
+    * */
+    val g = Gideon()
+
+    val drug = g.drug
+    println(drug)
+    g.weightLbs = 220.0
+    val kilos = g.weightKilos
+    g.weightKilos = 100.0
+    println(kilos)
     p.partnerName = "Adwoa"
     a.sign()
     p.sign()
@@ -37,5 +49,8 @@ fun main(args: Array<String>){
     val otherUser = koose.copy(email="404Solutions@gmail.com")
     println(otherUser)
 }
+
+
+
 
 
