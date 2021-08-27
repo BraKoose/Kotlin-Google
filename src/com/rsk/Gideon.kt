@@ -1,8 +1,8 @@
 package com.rsk
 
-class Gideon {
-    val drug: String = "Weed"
-    var weightLbs: Double = 0.0
+class Gideon(drug: String, weightLbs:Double) {
+    val drug = drug
+    var weightLbs = weightLbs
     var weightKilos: Double
         get() = weightLbs / 2.2
         set(something){
