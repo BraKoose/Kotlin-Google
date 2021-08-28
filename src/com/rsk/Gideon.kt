@@ -1,8 +1,8 @@
 package com.rsk
 
-class Gideon(drug: String, weightLbs:Double) {
-    val drug = drug
-    var weightLbs = weightLbs
+class Gideon(val drug: String, var weightLbs:Double) {
+    //using primary contructors so i dont need to declare those properties variables.
+
     var weightKilos: Double
         get() = weightLbs / 2.2
         set(something){

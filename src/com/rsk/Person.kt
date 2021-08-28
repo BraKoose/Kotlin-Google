@@ -28,10 +28,12 @@ fun main(args: Array<String>){
     /*so we g to see the code associate with Gideon class
     *
     * */
-    val g = Gideon()
+    val g = Gideon("Cocaine", 20.0)
+    g.weightLbs = 100.0
+    println(g)
+   println(g.drug)
 
-    val drug = g.drug
-    println(drug)
+
     g.weightLbs = 220.0
     val kilos = g.weightKilos
     g.weightKilos = 100.0
