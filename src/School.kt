@@ -2,7 +2,7 @@
 package com.rsk
 
 fun main(args: Array<String>){
-    log("Koose o ")
+    log(message = "Koose o ")
 }
 
 @JvmOverloads
