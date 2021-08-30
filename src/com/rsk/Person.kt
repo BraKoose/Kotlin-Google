@@ -16,3 +16,16 @@ class Employees:Company(){
     }
 
 }
+class Person(val pets:MutableList<Pet> = mutableListOf())
+class Pet {
+    constructor(owner : Person){
+        owner.pets.add(this)
+    }
+}
+
+open class Shape {
+    open val circle:Double = Math.PI
+}
+class Rectangle : Shape(){
+    override val circle = 10.0
+}
