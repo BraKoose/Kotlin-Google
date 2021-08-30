@@ -23,9 +23,11 @@ class Pet {
     }
 }
 
-open class Shape {
-    open val circle:Double = Math.PI
+interface Shape{
+    val circle : Double
 }
-class Rectangle : Shape(){
-    override val circle = 10.0
+class Rectangle(override val circle: Double = 10.0): Shape
+
+class Polygon: Shape{
+    override var circle: Double = 13.9
 }
