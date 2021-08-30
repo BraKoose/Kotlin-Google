@@ -26,8 +26,19 @@ class Pet {
 interface Shape{
     val circle : Double
 }
-class Rectangle(override val circle: Double = 10.0): Shape
+open class Rectangle{
+ open fun draw() { println("Drawing Rectangle")}
+    val borderColor: String get() = "blue"
+}
 
+class FilledRectangle: Rectangle(){
+    override fun draw() {
+        super.draw()
+        println("Beautiful Rectangle")
+    }
+
+    val fillcolor: String get() = super.borderColor
+}
 class Polygon: Shape{
     override var circle: Double = 13.9
 }
