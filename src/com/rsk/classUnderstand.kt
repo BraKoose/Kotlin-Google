@@ -1,4 +1,5 @@
 package com.rsk
+import
 
 class InitOrderDemo(name: String){
     val firsthobby = "Reading : $name".also(::println)
@@ -15,3 +16,18 @@ class InitOrderDemo(name: String){
 
 }
 
+class FilledRectange:Rectangle(){
+    override fun draw() {
+        val  filler = Filler()
+        filler.drawAndFill()
+    }
+
+    inner class Filler{
+        fun fill(){ println("Filling")}
+        fun drawAndFill(){
+            super.draw()
+            fill()
+            println("Drawn a rectangle dream with color ${super@FilledRectangle.borderColor}")
+        }
+    }
+}

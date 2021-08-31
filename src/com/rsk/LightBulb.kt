@@ -13,3 +13,10 @@ fun handlePersonEvent(event: PersonEvent){
         is PersonEvent.Asleep -> println(event.time)
     }
 }
+
+fun enroll(courseName: String){
+    val course = Courses.allCourse
+            .filter { it.Title == courseName }
+            .firstOrNull()
+
+}
