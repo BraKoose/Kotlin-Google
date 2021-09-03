@@ -1,17 +1,16 @@
 package com.rsk
 
-fun main(agrs: Array<String>) {
-    val num1 = 10
-    val num4 = 200
-    val num2 = 20
-    val result = if (num1 > num2 + num4) {
-        "Kosse is smart"
-    } else if (num1 * 10 > num2 + num4){
-
-        "I believe me "
-    }else{
-        "We are expert in Disguise"
+    fun main(args: Array<String>){
+        var number = 4
+        var numberProvided= when(number){
+            1 -> "Uni"
+            2 -> "Deux"
+            3 -> "Trio"
+            4 -> "Quatre"
+            5 -> "Cinq"
+            else -> "Invalid Lucky number"
+        }
+        println("You provided $numberProvided and Its is a Good")
     }
 
-    println(result)
-}
+
