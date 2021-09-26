@@ -1,44 +1,65 @@
 package com.rsk
 
-abstract class Company{
-    //Classes in Kotlin
-    var firs_Name: String = ""
-    var last_Name: String = ""
+import java.lang.ArithmeticException
+import java.lang.NumberFormatException
 
-    open fun getName():String = "$firs_Name $last_Name"
-    abstract fun getAddres():String
+interface  Signatory {
+    fun sign()
 }
+open class Person(val name: String, var age: Int, var isMarried: Boolean = false) : Signatory {
+    var partnername: String =  ""
 
-class Employees:Company(){
-    override fun getName():String{return ""}
-    override fun getAddres(): String {
-        return " "
+    override fun sign() = println(" $name is $isMarried aged $age can sign  Documents ")
+
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val str = getNumber("100.5")
+                println(str)
+            val g = Person("Koose", 22, true)
+
+            g.sign()
+            g.age = 92
+            g.sign()
+            g.partnername = "Faz"
+            println("Partners name is ${g.partnername}")
+            g.partnername = "Gideon"
+            println("Partners name is ${g.partnername}")
+            try{
+                val data = 20/0
+            }catch (e: NumberFormatException){
+                0
+            }
+            println(  "code below exception "  )
+            }
+
+
     }
 
 }
-class Person(val pets:MutableList<Pet> = mutableListOf())
-class Pet {
-    constructor(owner : Person){
-        owner.pets.add(this)
+
+fun getNumber(str: String): Int{
+    return try{
+        Integer.parseInt(str)
+    }catch (e:ArithmeticException){
+        0
     }
 }
 
-interface Shape{
-    val circle : Double
-}
-open class Rectangle{
- open fun draw() { println("Drawing Rectangle")}
-    val borderColor: String get() = "blue"
-}
+class Student(name:String, age:Int):Person(name, age)
 
-class FilledRectangle: Rectangle(){
-    override fun draw() {
-        super.draw()
-        println("Beautiful Rectangle")
-    }
+data class user( var name: String, var id:Int)
 
-    val fillcolor: String get() = super.borderColor
-}
-class Polygon: Shape{
-    override var circle: Double = 13.9
+fun main(args: Array<String>){
+    val b = Person("Koose", 20, true)
+    b.sign()
+
+    b.age = 100
+    b.sign()
+
+    val kevin = user("koose", 1)
+    println(kevin)
+    val (name, id) = kevin
+    println("User name is $name and with the id $id")
+
 }
