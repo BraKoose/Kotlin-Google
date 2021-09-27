@@ -1,31 +1,25 @@
-package com.rsk.com.rsk.secondModule
+package com.rsk.secondModule
 
-fun main (args: Array<String>){
-    var program = Program()
-    var total = 0
-    //program.fibonnaci(20)
-    program.fibonnaci(12) {it -> total += it}
+import com.rsk.com.rsk.secondModule.Meeting
 
-    println(total)
+fun main(agrs: Array<String>):Unit{
+    val inits = listOf(1, 2, 3, 4, 5)
+
+    val smallInts = inits.filter { it < 5 }
+    for (i: Int in smallInts) println(i)
+
+    val squaredInts = inits.map{ it*it}
+
+    for(i: Int in squaredInts) println(i)
+
+    val meetings = listOf(Meeting(1, "404 Solutions"), Meeting(2, "Clade Industries"))
+
+    val titles = meetings
+            .filter { it -> it.title.startsWith("4") }
+            .map { m -> m.title }
+    for (t in titles) println(t)
 }
 
-interface Process{
-    fun execute(value:Int)
-}
+class Meeting(val id: Int, val title:String){
 
-class Program{
-    fun fibonnaci(limit: Int, action:(Int)-> Unit){
-        var prev = 0
-        var prevprev = 0
-        var current = 1
-
-        for (i: Int in 1..limit){
-            action(current)
-
-            var temp = current
-            prevprev = prev
-            prev = temp
-            current = prev + prevprev
-        }
-    }
 }
