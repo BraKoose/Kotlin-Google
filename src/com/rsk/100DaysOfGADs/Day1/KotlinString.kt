@@ -27,4 +27,31 @@ fun main(args: Array<String>){
         |is greater than value $b
     """.trimMargin()
     println("${myString.trimMargin()}")
+
+    val text = """Kotlin is offical language
+        |annouced by Google for 
+        |android application development
+    """
+    println(text)
+    val text2 = """Kotlin is offical language
+        |annouced by Google for 
+        |android application development
+    """.trimMargin()
+    println(text2)
+
+    //Structural Equity
+    val str1 = "Hello Koose!"
+    val str2 = "Hello Koose!"
+    println(str1 == str2) //T
+
+    println(str1 != str2) //F
+
+    //Referential equality
+
+    val str3 = buildString { "Koose is King" }
+    val str4 = buildString { "Koose is King" }
+
+    println(str3 === str4)
+    println(str3 !== str4)
+
 }
