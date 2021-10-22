@@ -4,17 +4,21 @@ import java.lang.NullPointerException
 
 fun main(args: Array<String>){
     /**
-     Exception handling which exceptions occurs but not handled,
-     just as final always get executed in the try blocks
+     Exception handling which exceptions occurs and handled,
      **/
 
     try{
         val data = 5 /0
         println(data)
-    }catch (e: NullPointerException){
+    }catch (e: ArithmeticException){
         println(e)
     }finally {
         println("finaly block code always get executed")
     }
     println("below codes")
 }
+
+/*
+* Please Note : The finally block will not be executed if programs exits(either
+* by calling exitProcess(int) or any error that causes the process to abort
+* */
