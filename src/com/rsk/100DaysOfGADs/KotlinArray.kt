@@ -29,12 +29,20 @@ fun main (args: Array<String>){
     val name = arrayOf<String>("Koose", "koko", "Gideon", "Akala", "Atw3yaa")
     val myArray2 = arrayOf(1, 4, 5, "404 Solutions", "Trotro ")
     val myArray3: IntArray = intArrayOf(5, 50, 10, 100, 20, 200)
+    val myArray5: IntArray = intArrayOf(201, 202, 203, 204, 205, 206)
     array1.set(0, 5)
     array1[2] = 100
 
     array2.set(2, 10)
     array2[3] = 16
 
+    for (index in 0..4){
+        println(myArray5[index])
+    }
+    println()
+    for(index in 0 .. myArray5.size-1){
+        println(myArray5[index])
+    }
     for(element in array1){
         println(element)
     }
