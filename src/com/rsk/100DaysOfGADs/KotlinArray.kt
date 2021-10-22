@@ -63,6 +63,14 @@ fun main (args: Array<String>){
      */
     var myArray = Array<Int>(5){0}
 
+    /*
+    insert an element at index postiton greater thamn arraysize with throw ARRAYINDEXOUTOFBOUNDEXCEPTION error
+     */
+    myArray3[6] = 300
+    for (elements in myArray3){
+        println(elements)
+    }
+
     myArray[1] = 1000
     myArray[3] = 15
     for(element in myArray){
