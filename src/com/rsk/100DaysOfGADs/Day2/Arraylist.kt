@@ -16,5 +16,7 @@ fun main (args: Array<String>){
     while (itr.hasNext()){
         println(itr.next())
     }
-    println("Size of the arrayList = " + arrayList.size)
+    //get() function of Arraylist is used to retrieve elements present at the given index
+    println(".................arrayList.get(2)......")
+    println(arrayList.get(2))
 }
