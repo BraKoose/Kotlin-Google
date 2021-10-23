@@ -16,7 +16,11 @@ fun main (args: Array<String>){
     while (itr.hasNext()){
         println(itr.next())
     }
-    //get() function of Arraylist is used to retrieve elements present at the given index
-    println(".................arrayList.get(2)......")
-    println(arrayList.get(2))
+    //set() function of Arraylist is used to retrieve elements present at the given index
+    println(".................arrayList.set(2)......")
+    println(arrayList.set(0, "Koose"))
+    println(".......println Arraylist.....")
+    for(i in arrayList){
+        println(i)
+    }
 }
