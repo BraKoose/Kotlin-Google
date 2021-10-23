@@ -1,25 +1,24 @@
 package com.rsk.com.rsk.`100DaysOfGADs`.Day2
 
-/*For more specific, we provide the generic types of list
-* such as listOf<int>(), ListOf<String>(),listOf<Any>
-* */
+/*Example 4 lets see the use of different functions of Kotlin list
+*Interface using ListOf<T>() funcyion
+*  */
 
 fun main (args: Array<String>){
-    var intList: List<Int> = listOf<Int>(1, 2, 7)
-    var StringList: List<String> = listOf<String>("404 Solutions", "Clade", "Trotro", "Highway")
-    var anyList: List<Any> = listOf<Any>(1, "Dada Koose", 209, "404 Solutions", 9090, "Love Kotlin")
-    println("Print int List ")
-    for(element in intList){
-        println(element)
+    var StringList: List<String> = listOf<String>("Koose", "404 Solutions", "Trotro")
+    var list: List<String> = listOf<String>("Jesus", "Slave Ship", "Christianity")
+    for(elements in StringList){
+        println(elements + " ")
     }
     println()
-    println("Print String List")
-    for (words in StringList){
-        println(words)
-    }
-    println()
-    println("Print Any List ")
-    for (anybody in anyList){
-        println(anybody)
-    }
+    println(StringList.get(0))
+    println(StringList.indexOf("404 Solutions"))
+    println(StringList.size)
+    println(StringList. lastIndexOf("Koose"))
+    println(StringList.contains("Trotor"))
+    println(StringList.containsAll(list))
+    println(StringList.subList(1,2))
+    println(StringList.isEmpty())
+    println(StringList.drop(1))
+    println(StringList.dropLast(2))
 }
