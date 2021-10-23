@@ -23,4 +23,6 @@ fun main (args: Array<String>){
     for(i in arrayList){
         println(i)
     }
+        println("........arraylist. indexof......")
+    println(arrayList.indexOf("Koose"))
 }
