@@ -18,11 +18,14 @@ fun main (args: Array<String>){
     }
     //set() function of Arraylist is used to retrieve elements present at the given index
     println(".................arrayList.set(2)......")
-    println(arrayList.set(0, "Koose"))
+    println(arrayList.remove("Koose"))
     println(".......println Arraylist.....")
     for(i in arrayList){
         println(i)
     }
-        println("........arraylist. indexof......")
-    println(arrayList.indexOf("Koose"))
+    println(".......arrayList.removeAt.......")
+    arrayList.removeAt(2)
+    for (i in arrayList){
+        println(i)
+    }
 }
