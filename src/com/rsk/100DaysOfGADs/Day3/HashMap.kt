@@ -20,6 +20,9 @@ fun main(args: Array<String>){
     for (key in StringMap.keys){
         println("key = ${key}, value = ${StringMap[key]}")
     }
+    println(".....stringmap.Clear ......")
+    println(StringMap.clear())
+    println(StringMap)
 
     println(".......traverse intMap......")
     for(key in intMap.keys){
