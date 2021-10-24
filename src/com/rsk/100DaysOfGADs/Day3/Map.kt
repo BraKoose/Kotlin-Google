@@ -6,8 +6,8 @@ fun main (args: Array<String>) {
     for (key in myMap.keys) {
         println("ELements at the key $key = ${myMap.get(key)}")
     }
-    println("....myMap.asIterable()......")
-    for (itr in myMap.asIterable()){
-        println("key = ${itr.key} value = ${itr.value}")
+    println("....myMap.plus(Pair(100 /Johnny Stupdi)......")
+    for (m  in myMap.plus(Pair(5, "DAD stupid"))){
+        println("Elements at key  ${m.key} = ${m.value}")
     }
 }
