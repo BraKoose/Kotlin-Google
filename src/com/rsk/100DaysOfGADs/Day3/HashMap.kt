@@ -14,8 +14,12 @@ fun main(args: Array<String>){
     for(key in StringMap.keys){
         println(StringMap[key])
     }
-    println(".............stringMap.contains City......")
-    println(StringMap.contains("City"))
+    println(".............stringMap.replace(city to Accra)......")
+    println(StringMap.replace("City", "Accra"))
+    println("......traverse string after StringMap replace......")
+    for (key in StringMap.keys){
+        println("key = ${key}, value = ${StringMap[key]}")
+    }
 
     println(".......traverse intMap......")
     for(key in intMap.keys){
