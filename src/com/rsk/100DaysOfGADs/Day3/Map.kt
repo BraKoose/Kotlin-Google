@@ -6,6 +6,8 @@ fun main (args: Array<String>) {
     for (key in myMap.keys) {
         println("ELements at the key $key = ${myMap.get(key)}")
     }
-    println("....myMap.getorDefault......")
-    println(myMap.getOrDefault(10, "Kofi Strait" ))
+    println("....myMap.asIterable()......")
+    for (itr in myMap.asIterable()){
+        println("key = ${itr.key} value = ${itr.value}")
+    }
 }
