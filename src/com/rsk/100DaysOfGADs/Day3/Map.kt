@@ -1,11 +1,11 @@
 package com.rsk.com.rsk.`100DaysOfGADs`.Day3
 
-fun main (args: Array<String>){
+fun main (args: Array<String>) {
 // For specific we can provide NON - genric types
-    val myMap = mapOf(1 to "Godfred", 4 to "Addai", 10 to "Kayna City", "Kejetia" to "Asuofua", "Abrepo" to 9)
-    for(key in myMap.keys){
-    println("Elements at key $key = ${myMap.get(key)}")
-        println("........Element at key 4..........")
-        println(myMap.getValue(4))
+    val myMap: Map<Int, String> = mapOf<Int, String>(1 to "Kofi Strait", 10 to "Maa Lucy", 100 to "Johnny Stupid")
+    for (key in myMap.keys) {
+        println("ELements at the key $key = ${myMap.get(key)}")
     }
+    println(".............myMap.contains(3).....")
+    println(myMap.contains(3))
 }
