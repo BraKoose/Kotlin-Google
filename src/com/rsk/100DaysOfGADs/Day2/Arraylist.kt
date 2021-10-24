@@ -23,9 +23,11 @@ fun main (args: Array<String>){
     for(i in arrayList){
         println(i)
     }
-    println(".......arrayList.removeAt.......")
-    arrayList.removeAt(2)
+    println(".......arrayList.clear.......")
+    arrayList.clear()
     for (i in arrayList){
         println(i)
     }
+    println("........arraylist........")
+    println(arrayList)
 }
