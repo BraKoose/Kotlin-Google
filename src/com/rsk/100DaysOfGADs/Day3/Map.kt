@@ -6,6 +6,6 @@ fun main (args: Array<String>) {
     for (key in myMap.keys) {
         println("ELements at the key $key = ${myMap.get(key)}")
     }
-    println(".............myMap.contains(3).....")
-    println(myMap.contains(3))
+    println(".....myMap.containsValue.......Kofi Strait")
+    println(myMap.containsValue("Kofi Strait"))
 }
