@@ -5,5 +5,7 @@ fun main (args: Array<String>){
     val myMap = mapOf(1 to "Godfred", 4 to "Addai", 10 to "Kayna City", "Kejetia" to "Asuofua", "Abrepo" to 9)
     for(key in myMap.keys){
     println("Elements at key $key = ${myMap.get(key)}")
+        println("........Element at key 4..........")
+        println(myMap.getValue(4))
     }
 }
