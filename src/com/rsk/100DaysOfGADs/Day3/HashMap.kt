@@ -14,9 +14,8 @@ fun main(args: Array<String>){
     for(key in StringMap.keys){
         println(StringMap[key])
     }
-    println(".............stringMap.containvalue Kumasi......")
-    println(StringMap.containsValue("Kumasi"))
-    println(StringMap.containsValue("Dehli"))
+    println(".............stringMap.contains City......")
+    println(StringMap.contains("City"))
 
     println(".......traverse intMap......")
     for(key in intMap.keys){
