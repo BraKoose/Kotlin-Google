@@ -9,8 +9,8 @@ fun main(args: Array<String>) {
     for (key in mySet){
         println(key)
     }
-    println(".....my set.isEmpty()....")
-    println(mySet.isEmpty())
-    println(".....my set.isNotEmpty()....")
-    println(mySet.isNotEmpty())
-}
+    println(".........print mySet.elementat(3)......")
+    println(mySet.elementAt(3))
+    println(".......print mySet.ElementAtOrNull(8).....")
+    println(mySet.elementAtOrNull(5))
+    }
