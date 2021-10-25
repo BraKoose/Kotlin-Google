@@ -9,9 +9,8 @@ fun main(args: Array<String>) {
     for (key in mySet){
         println(key)
     }
-    println(".....my set.contains Nickolas....")
-    println(mySet.contains("Nickolas"))
-    println(".......myset Contains(2021)....")
-    println(mySet.contains(2021))
-    println(mySet.containsAll(intSet))
+    println(".....my set.isEmpty()....")
+    println(mySet.isEmpty())
+    println(".....my set.isNotEmpty()....")
+    println(mySet.isNotEmpty())
 }
