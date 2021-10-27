@@ -12,7 +12,7 @@ class lamp {
         isOn = false
     }
     fun displayLightStatus(){
-        if (isOn == true)
+        if (isOn != true)
             println(" lamp is on")
         else
             println(" lamp is off")
