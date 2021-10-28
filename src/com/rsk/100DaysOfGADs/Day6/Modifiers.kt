@@ -1,13 +1,11 @@
 package com.rsk.com.rsk.`100DaysOfGADs`.Day6
 
-// Protected Typpe Modifiers
+// Internal Modifiers
 
-open class Base{
-    open protected val i = 5
-}
-class Another: Base(){
-    fun getValue(): Int{
-        return i
+internal class Example{
+    internal val x = 5
+    internal fun getValue(){
+
     }
-    override val i = 19
 }
+internal val y = 190
