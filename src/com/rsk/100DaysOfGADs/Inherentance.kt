@@ -1,14 +1,18 @@
 package com.rsk.com.rsk.`100DaysOfGADs`
 
-open class Inherentance {
-    val x = 10
-}
-class Derived: Inherentance(){
-    fun foo(){
-        println("X is equal to " + x)
+open class Bird{
+    fun fly(){
+        println("flying....")
     }
 }
-fun main (args: Array<String>){
-    val derived = Derived()
-    derived.foo()
+class Duck: Bird(){
+    fun swim(){
+        println("swimming....")
+    }
+}
+
+fun main(args: Array<String>){
+    val duck = Duck()
+    duck.fly()
+    duck.swim()
 }
