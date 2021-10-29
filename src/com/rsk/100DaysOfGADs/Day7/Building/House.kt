@@ -4,8 +4,8 @@ class House(
         override  var owner: String,
         override val rooms: Int,
         override val bathrooms: Double,
-        override var color: String
-): Building(){
+        override var color: String, marketplace: Double
+): Building(marketplace){
     override fun ownerPrompt() {
         println("Hey mr $owner")
     }
