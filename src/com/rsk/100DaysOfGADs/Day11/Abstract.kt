@@ -1,14 +1,21 @@
 package com.rsk.com.rsk.`100DaysOfGADs`.Day11
 
-abstract class Car{
-    abstract fun run()
-}
-class Kantanka: Car(){
-    override fun run() {
-        println("Kantanka is running safely.")
+open class Car {
+    open fun run(){
+        println("Car is running .......")
     }
 }
-fun main(args: Array<String>){
-    val obj = Kantanka()
-    obj.run()
-}
+    abstract class Kantanka:Car(){
+        override abstract fun run()
+    }
+    class City: Kantanka(){
+        override fun run() {
+            println("Kantanka was invented in Ghana, Accra")
+        }
+    }
+    fun main(args: Array<String>){
+        val car = Car()
+        car.run()
+        val city = City()
+        city.run()
+    }
