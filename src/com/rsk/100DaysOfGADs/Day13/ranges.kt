@@ -1,16 +1,9 @@
 package com.rsk.com.rsk.`100DaysOfGADs`.Day13
 
-fun main (args: Array<String>){
-    for (a in 10 until 39){
-        print(a)
-    }
+fun main (args: Array<String>) {
+for (x in 'a' ..'e')
+    print("$x ")
     println()
-
-    for (x in 'a' .. 'f'){
-        print(x)
-    }
-    println()
-    val range = 1.0 .. 6.0
-    println(range)
-    println("3.14 in range is ${3.14 in range}")
+    for (x in 'e' downTo 'a')
+        print("$x ")
 }
