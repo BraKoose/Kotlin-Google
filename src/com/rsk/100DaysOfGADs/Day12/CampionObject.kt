@@ -1,13 +1,16 @@
 package com.rsk.com.rsk.`100DaysOfGADs`.Day12
 
-class myClass {
+class myclass{
     companion object{
-        fun  create():String{
-            return "Calls create method of compainion object"
+        fun create():String{
+            return "calling create method of campanion objects"
         }
     }
 }
+
+fun myclass.Companion.Koose(){
+    println("execute extension of campnion objects")
+}
 fun main (args: Array<String>){
-    val instatnce = myClass.create()
-    println(instatnce)
+    myclass.Koose()
 }
