@@ -9,7 +9,7 @@ fun main(agrs: Array<String>) {
 }
 
 
-fun <T> first(items: List<T>, predicate:(T) -> Boolean):T{
+inline fun <T> first(items: List<T>, predicate:(T) -> Boolean):T{
     for(item in items){
         if (predicate(item)) return item
     }
