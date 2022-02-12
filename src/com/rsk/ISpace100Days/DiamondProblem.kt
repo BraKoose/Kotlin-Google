@@ -20,5 +20,6 @@ class DiamondProblem: A, B{
 }
 
 fun main(args : Array<String>){
-    DiamondProblem()
+    val diamond: DiamondProblem = DiamondProblem()
+    diamond.koose()
 }
