@@ -29,17 +29,38 @@ interface Fax {
 }
 class Multifunction: Printable, Fax{
     override fun print(doc: String) {
+        super<Fax>.print(doc)
+        super<Printable>.print(doc)
+        val printer: Printable = Multifunction()
+        printer.print("L")
+        println("Multifunction: printing")
         println("Multifunction : printing")
     }
 
 }
 
 
+open class Person(_name:String) {
+    val name = _name
+    open fun talk() {
+        println("${this.javaClass.simpleName} talking")
+    }
+}
+class Employee(_name:String, _empid:String = "1001") : Person(_name) {
+    val empid = _empid
+    override fun talk() {
+        super.talk()
+        println("Hello")
+    }
+
+    override fun toString(): String {
+        return "name: $name | id: $empid"
+    }
+}
+
 fun main(args : Array<String>){
-    val diamond: DiamondProblem = DiamondProblem()
-    diamond.koose()
-    val example2 : Multifunction = Multifunction()
-    example2.print("koose")
-    example2.answer()
-    example2.call("02999999")
+
+    val person: Person = Person("Koose")
+    person.talk()
+    person.toString()
 }
