@@ -19,7 +19,27 @@ class DiamondProblem: A, B{
 
 }
 
+interface Printable {
+    fun print(doc:String) = println("Printer:Printing $doc")
+}
+interface Fax {
+    fun call(number: String) = println("Calling $number")
+    fun print(doc: String) = println("Fax:Printing $doc")
+    fun answer() = println("answering")
+}
+class Multifunction: Printable, Fax{
+    override fun print(doc: String) {
+        println("Multifunction : printing")
+    }
+
+}
+
+
 fun main(args : Array<String>){
     val diamond: DiamondProblem = DiamondProblem()
     diamond.koose()
+    val example2 : Multifunction = Multifunction()
+    example2.print("koose")
+    example2.answer()
+    example2.call("02999999")
 }
