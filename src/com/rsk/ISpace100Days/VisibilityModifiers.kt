@@ -23,10 +23,12 @@ object Util {
 }
 
 //Higher Order Functions
+//Simpler way with a normal function and :: for reference
 
-val doThis:() -> Unit = {
-    println("action")
+fun doThis() {
+    println ("action")
 }
+
 
 fun executor(action: () -> Unit){
     action()
@@ -40,5 +42,5 @@ fun main(args: Array<String>) {
 
     Util.name = "Bar"
     Util.foo() // prints "Bar"
-    executor(doThis)
+    executor(::doThis)
 }
