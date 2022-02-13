@@ -22,6 +22,17 @@ object Util {
     fun foo() = println(name)
 }
 
+//Higher Order Functions
+
+val doThis:() -> Unit = {
+    println("action")
+}
+
+fun executor(action: () -> Unit){
+    action()
+    action.invoke()
+}
+
 
 fun main(args: Array<String>) {
     var fu = Foo()
@@ -29,4 +40,5 @@ fun main(args: Array<String>) {
 
     Util.name = "Bar"
     Util.foo() // prints "Bar"
+    executor(doThis)
 }
