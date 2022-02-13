@@ -35,11 +35,16 @@ fun executor(action: () -> Unit){
     action.invoke()
 }
 
+fun trotrofare(fare:(price:Int,AmountPaid:Int) -> Unit) {
+    fare(3, 5)
+}
+
+
 
 fun main(args: Array<String>) {
     var fu = Foo()
     fu.bar()
-
+    trotrofare({price, AmountPaid -> println(AmountPaid -price)  })
     Util.name = "Bar"
     Util.foo() // prints "Bar"
     executor(::doThis)
