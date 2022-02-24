@@ -9,4 +9,5 @@ fun main (args: Array<String>){
     for (i in basket) {
         println(i)
     }
+    basket.forEach { println(it) }
 }
