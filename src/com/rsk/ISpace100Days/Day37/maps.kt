@@ -8,4 +8,6 @@ fun main(args: Array<String>){
     println(snapshot)
     println(dict)
     println(snapshot["bar"]) // prints 2
+
+    dict.forEach { s, i -> println("$s to $i")  }
 }
