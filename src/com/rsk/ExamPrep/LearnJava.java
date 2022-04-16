@@ -13,5 +13,21 @@ public class LearnJava {
         System.out.println(Koose);
         boolean mybool = true;
         char koose = '$';
+
+        //w3 Example 2
+        String carName = "Volvo";
+        System.out.println(carName);
+        String kooseFare = Koose + Age;
+        System.out.println(kooseFare);
+
+        byte byteNumber = 100;
+        System.out.println(byteNumber);
+
+        long longNumver = 15000000000000000L;
+        System.out.println(longNumver);
+        float f1 = 35e3f;
+        double d1 = 12E4d;
+        System.out.println(f1);
+        System.out.println(d1);
     }
 }
