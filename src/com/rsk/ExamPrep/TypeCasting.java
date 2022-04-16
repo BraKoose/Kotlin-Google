@@ -9,9 +9,13 @@ public class TypeCasting {
          System.out.println(myInt);
          System.out.println(myDouble);
 
+         //narrow
          double doubleKoose = 9.78d;
          int newNumber = (int) doubleKoose;
          System.out.println(doubleKoose);
          System.out.println(newNumber);
+
+         String txt = "The zeal is learn and \t prove thy self and God only.";
+         System.out.println(txt);
     }
 }
