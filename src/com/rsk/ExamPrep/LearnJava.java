@@ -29,5 +29,14 @@ public class LearnJava {
         double d1 = 12E4d;
         System.out.println(f1);
         System.out.println(d1);
+
+        //Boolean Types
+        boolean isRealKoose = true;
+        boolean isRich = true;
+        boolean aQuitter = false;
+
+        System.out.println(isRealKoose);
+        System.out.println(isRich);
+        System.out.println(aQuitter);
     }
 }
